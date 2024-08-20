@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+      <br><br><br><br><br>
+    <div class="feedback-form-container">
+        <h1>Provide us Your Valuable Feedback</h1>
+        <form action="connect2.php" method="post" class="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Rating:</label>
+            <div class="rating-group">
+                <input type="radio" id="rating-5" name="rating" value="5">
+                <label for="rating-5">5</label>
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <label for="rating-4">4</label>
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <label for="rating-3">3</label>
+                <input type="radio" id="rating-2" name="rating" value="2">
+                <label for="rating-2">2</label>
+                <input type="radio" id="rating-1" name="rating" value="1">
+                <label for="rating-1">1</label>
+            </div>
+
+            <label for="message">Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
